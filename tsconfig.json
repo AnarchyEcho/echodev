@@ -15,15 +15,11 @@
     "forceConsistentCasingInFileNames": true,
     "removeComments": true,
     "typeRoots": [
-      "./src/@types",
       "./node_modules/@types",
     ],
     "sourceMap": false,
     "baseUrl": "./"
 },
-"include": [
-    "./**/*.ts"
-],
 "exclude": [
     "node_modules",
     "dist"

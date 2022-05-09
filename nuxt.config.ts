@@ -14,5 +14,8 @@ export default defineNuxtConfig({
       }],
       "script": []
     }
+  },
+  typescript: {
+    strict: true
   }
 })

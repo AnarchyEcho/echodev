@@ -4,13 +4,15 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   app: {
     head: {
-      "title": "CVNuxt",
+      "description": "CV page made in Nuxt3",
       "charset": "utf-8",
       "viewport": "width=device-width, initial-scale=1",
       "meta": [],
-      "link": [],
+      "link": [
+        { rel: "icon", type: "image/icon", href: "/assets/logo.svg" }
+      ],
       "style": [{
-        children: ":root { background-color: #222; color: #fff; }"
+        children: ":root { background-color: #222; color: #fff; font-family: arial; }"
       }],
       "script": []
     }

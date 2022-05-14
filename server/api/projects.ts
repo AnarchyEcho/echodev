@@ -615,7 +615,7 @@ export default defineEventHandler(() => {
         site_admin: false,
       },
       html_url: 'https://github.com/KodeAndre/cvreact',
-      description: 'Personal CV Website',
+      description: '(Old) Personal CV Website',
       fork: false,
       url: 'https://api.github.com/repos/KodeAndre/cvreact',
       forks_url: 'https://api.github.com/repos/KodeAndre/cvreact/forks',

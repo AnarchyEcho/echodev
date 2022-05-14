@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div>
+  <div class="body">
     <Head>
       <Title>Home</Title>
     </Head>
@@ -13,5 +13,7 @@
 </template>
 
 <style scoped lang="scss">
-
+.body {
+  margin-left: 1rem;
+}
 </style>

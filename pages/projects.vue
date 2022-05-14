@@ -15,9 +15,8 @@ const projects: any = await $fetch('/api/projects');
         <a v-if="project.homepage" :href="project.homepage" target="_blank">{{ project.homepage }}</a>
         <p v-else class="noSite">Doesn't or can't have a live website</p>
         <p>{{ project.description }}</p>
-        <span>Github link:
-          <a :href="project.html_url" target="_blank">here</a>
-        </span>
+        <p>Largest % language: {{ project.language }}</p>
+        <a :href="project.html_url" target="_blank" icon="fas fa-github">Github</a>
       </span>
     </div>
   </div>

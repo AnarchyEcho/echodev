@@ -12,9 +12,6 @@
       <NuxtLink to="/projects">
         Projects
       </NuxtLink>
-      <NuxtLink to="/about">
-        About
-      </NuxtLink>
     </div>
   </div>
 </template>

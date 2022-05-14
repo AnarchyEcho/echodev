@@ -37,6 +37,7 @@ const projects: any = await $fetch('/api/projects');
 .project {
   background-color: #252525;
   max-width: 60%;
+  padding: 0rem 1rem 1rem;
 }
 .noSite {
   color: #808080;

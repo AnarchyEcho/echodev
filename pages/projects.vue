@@ -8,10 +8,10 @@ const projects: any = await $fetch('/api/projects');
       <Title>My Projects</Title>
     </Head>
 
-    <h2>Projects</h2>
+    <h2>My array of projects</h2>
     <div class="projectsList">
       <span v-for="project in projects" :key="project.id" class="project">
-        <h4>{{ project.name }}</h4>
+        <h4 class="title">{{ project.name }}</h4>
         <a v-if="project.homepage" :href="project.homepage" target="_blank">{{ project.homepage }}</a>
         <p v-else class="noSite">Doesn't or can't have a live website</p>
         <p>{{ project.description }}</p>
@@ -38,6 +38,10 @@ const projects: any = await $fetch('/api/projects');
   background-color: #252525;
   max-width: 60%;
   padding: 0rem 1rem 1rem;
+  border-radius: 10px;
+}
+.title {
+  color: #ffa500;
 }
 .noSite {
   color: #808080;

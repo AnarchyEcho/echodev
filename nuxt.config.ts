@@ -11,13 +11,16 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/icon', href: '/assets/logo.svg' },
       ],
-      style: [{
-        children: ':root { background-color: #222; color: #fff; font-family: arial; }',
-      }],
       script: [],
     },
   },
   typescript: {
     strict: true,
+  },
+  build: {
+    loaders: {
+      sass: {},
+      scss: {},
+    },
   },
 });

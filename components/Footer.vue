@@ -4,11 +4,9 @@
 
 <template>
   <div>
-    <Head>
-      <Title>Home</Title>
-    </Head>
-
-    <h2>Home page</h2>
+    <NuxtLink to="https://github.com/kodeandre" target="_blank" no-rel>
+      My Github
+    </NuxtLink>
   </div>
 </template>
 

@@ -64,6 +64,7 @@
       "startTag": "never",
       "endTag": "never",
       "selfClosingTag": "always"
-    }]
+    }],
+    "no-return-assign": 0
   }
 }

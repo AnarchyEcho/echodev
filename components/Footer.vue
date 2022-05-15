@@ -4,17 +4,29 @@
 
 <template>
   <div class="footer">
-    <NuxtLink to="https://github.com/kodeandre" target="_blank" no-rel>
-      My Github
-    </NuxtLink>
+    <div>
+      <NuxtLink to="https://github.com/kodeandre" target="_blank" no-rel>
+        My Github
+      </NuxtLink>
+      <NuxtLink href="https://www.linkedin.com/in/andr%C3%A8-hagen-a0a821217/" target="_blank" rel="noreferrer">
+        My LinkedIn
+      </NuxtLink>
+    </div>
+    <p>
+      &copy; {{ `Copyright 2021 - ${new Date().getFullYear()}` }} <a href="https://github.com/kodeandre" target="_blank" rel="noreferrer">
+        Andrè Hagen
+      </a>
+    </p>
   </div>
 </template>
 
 <style scoped lang="scss">
 .footer {
   background-color: #252525;
-  padding: 1rem 0;
+  padding: 0.1rem 1rem;
   margin-top: 1rem;
-  padding-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 </style>

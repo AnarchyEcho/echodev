@@ -1,5 +1,10 @@
 <script setup lang="ts">
+// eslint-disable-next-line import/named
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 const projects: any = await $fetch('/api/projects');
+library.add(faGithub, faLinkedin);
 </script>
 
 <template>
@@ -20,7 +25,7 @@ const projects: any = await $fetch('/api/projects');
         <p v-else class="noSite">Doesn't or can't have a live website</p>
         <p>{{ project.description }}</p>
         <p>Most used language: {{ project.language }}</p>
-        <a :href="project.html_url" target="_blank">Github</a>
+        <a :href="project.html_url" target="_blank"><FontAwesomeIcon :icon="faGithub" class="icons" /></a>
       </span>
     </div>
   </div>
@@ -55,5 +60,9 @@ a {
   word-break: break-word;
   color: #0094e3;
   font-weight: bold;
+}
+.icons {
+  font-size: 2rem;
+  color: #ffa500;
 }
 </style>

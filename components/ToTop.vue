@@ -19,7 +19,7 @@ const scrollTop = () => {
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 1rem;
+  bottom: 3rem;
   right: 1rem;
   z-index: 10;
   background-color: #ffa500;

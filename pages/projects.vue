@@ -8,6 +8,8 @@ const projects: any = await $fetch('/api/projects');
       <Title>My Projects</Title>
     </Head>
 
+    <ToTop />
+
     <h2 style="margin-left: 1rem">
       My array of projects
     </h2>

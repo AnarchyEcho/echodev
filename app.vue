@@ -8,7 +8,7 @@
       <Meta name="description" content="CV page created with Nuxt3/Vue" />
       <Meta name="keywords" content="Typescript, Vue, CV, resume, portfolio" />
       <Meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <Link rel="icon" type="image/svg" href="/assets/logo.svg" />
+      <Link rel="icon" type="image/svg" href="~/assets/logo.svg" />
     </Head>
 
     <Header class="Header" />

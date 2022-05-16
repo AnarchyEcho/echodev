@@ -11,6 +11,7 @@
     <div>
       <h2>Who am I</h2>
       <p>My name is Andrè, i'm 24 years old</p>
+      <img src="/assets/me.png" class="myImage">
       <h2>About me</h2>
       <p>I love learning new things in coding and tech 24/7 and do so in my free time with frameworks and languages so I have as much experience and knowledge as possible, since I like coding that much.</p>
       <p>My hobbies include gaming, coding, Dungeons & Dragons, and I also really like traveling to other countries when I can, mostly the UK.</p>
@@ -27,8 +28,17 @@
 <style scoped lang="scss">
 .body {
   margin-left: 1rem;
+  text-align: center;
+    @media (max-width: 768px) {
+    text-align: left;
+  }
 }
 h2 {
   color: #ffa500;
+}
+.myImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
 }
 </style>

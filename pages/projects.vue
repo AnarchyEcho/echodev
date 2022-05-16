@@ -15,9 +15,6 @@ library.add(faGithub, faLinkedin);
 
     <ToTop />
 
-    <h2 style="margin-left: 1rem">
-      My array of projects
-    </h2>
     <div class="projectsList">
       <span v-for="project in projects" :key="project.id" class="project">
         <h3 class="title">{{ project.name }}</h3>

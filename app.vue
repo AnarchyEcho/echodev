@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const logo = ref('/assets/logo.svg');
+const logo = ref('/logo.svg');
 </script>
 
 <template>

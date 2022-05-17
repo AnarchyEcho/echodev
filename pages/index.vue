@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const me = ref('/assets/me.png');
+const me = ref('/me.png');
 </script>
 
 <template>

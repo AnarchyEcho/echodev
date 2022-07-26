@@ -10,7 +10,7 @@ const me = ref('/me.png');
 
     <div class="info">
       <h2>Who am I</h2>
-      <p>My name is Andrè, i'm 24 years old</p>
+      <p>My name is Andrè, I'm 24 years old</p>
       <img :src="me" class="myImage">
       <h2>About me</h2>
       <p>I have one year of education in IT development with training in a company.</p>

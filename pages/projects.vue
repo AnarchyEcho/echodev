@@ -3,8 +3,8 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-const projects: any = await $fetch('/api/projects');
 library.add(faGithub, faLinkedin);
+const { pending, data: projects }: any = useLazyAsyncData('projects', () => $fetch('https://echo-restful.herokuapp.com/api/projects'));
 </script>
 
 <template>
@@ -14,8 +14,10 @@ library.add(faGithub, faLinkedin);
     </Head>
 
     <ToTop />
-
-    <div class="projectsList">
+    <div v-if="pending">
+      Loading projects...
+    </div>
+    <div v-if="projects" class="projectsList">
       <span v-for="project in projects" :key="project.id" class="project">
         <h3 class="title">{{ project.name }}</h3>
         <a v-if="project.homepage" :href="project.homepage" target="_blank">{{ project.homepage }}</a>

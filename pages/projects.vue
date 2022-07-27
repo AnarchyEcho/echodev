@@ -2,9 +2,9 @@
 // eslint-disable-next-line import/named
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-library.add(faGithub, faLinkedin);
-const { pending, data: projects }: any = useLazyAsyncData('projects', () => $fetch('https://echo-restful.herokuapp.com/api/projects'));
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+library.add(faGithub);
+const { pending, data: projects, refresh }: any = useLazyAsyncData('projects', () => $fetch('https://echo-restful.herokuapp.com/api/projects').finally(() => refresh));
 </script>
 
 <template>
@@ -17,7 +17,7 @@ const { pending, data: projects }: any = useLazyAsyncData('projects', () => $fet
     <div v-if="pending">
       Loading projects...
     </div>
-    <div v-if="projects" class="projectsList">
+    <div v-else class="projectsList">
       <span v-for="project in projects" :key="project.id" class="project">
         <h3 class="title">{{ project.name }}</h3>
         <a v-if="project.homepage" :href="project.homepage" target="_blank">{{ project.homepage }}</a>

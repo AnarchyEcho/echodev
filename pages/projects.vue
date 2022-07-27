@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 library.add(faGithub);
-const { pending, data: projects, refresh }: any = useLazyAsyncData('projects', async () => await $fetch('https://echo-restful.herokuapp.com/api/projects').finally(() => refresh()));
+const { pending, data: projects, refresh }: any = useLazyAsyncData('projects', () => $fetch('https://echo-restful.herokuapp.com/api/projects').finally(() => refresh()));
 </script>
 
 <template>

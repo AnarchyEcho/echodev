@@ -1,10 +1,10 @@
-<script setup lang="ts">
+<script async setup lang="ts">
 // eslint-disable-next-line import/named
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 library.add(faGithub);
-const { pending, data: projects }: any = useFetch('https://dotrest.azurewebsites.net/api/Projects');
+const { pending, data: projects }: any = await useFetch('https://dotrest.azurewebsites.net/api/Projects');
 </script>
 
 <template>

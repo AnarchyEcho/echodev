@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 library.add(faGithub);
-const { pending, data: projects }: any = useLazyAsyncData('projects', () => $fetch('https://dotrest.azurewebsites.net/api/Projects'));
+const { pending, data: projects }: any = useLazyFetch('https://dotrest.azurewebsites.net/api/Projects');
 </script>
 
 <template>
@@ -17,7 +17,7 @@ const { pending, data: projects }: any = useLazyAsyncData('projects', () => $fet
     <div v-if="pending">
       Loading projects...
     </div>
-    <div v-else class="projectsList">
+    <div v-else-if="projects" class="projectsList">
       <span v-for="project in projects" :key="project.id" class="project">
         <h3 class="title">{{ project.name }}</h3>
         <a v-if="project.homepage" :href="project.homepage" target="_blank">{{ project.homepage }}</a>

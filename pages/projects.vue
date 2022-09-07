@@ -15,7 +15,7 @@ const { pending, data: projects }: any = await useFetch('https://dotrest.azurewe
 
     <ToTop />
     <div v-if="pending">
-      Loading projects...
+      {{ $t("loadingProjects") }}
     </div>
     <div v-else class="projectsList">
       <span v-for="project in projects" :key="project.id" class="project">

@@ -10,7 +10,7 @@ const { pending, data: projects }: any = await useFetch('https://dotrest.azurewe
 <template>
   <div>
     <Head>
-      <Title>My Projects</Title>
+      <Title>{{ $t("projectsHead") }}</Title>
     </Head>
 
     <ToTop />
@@ -21,9 +21,9 @@ const { pending, data: projects }: any = await useFetch('https://dotrest.azurewe
       <span v-for="project in projects" :key="project.id" class="project">
         <h3 class="title">{{ project.name }}</h3>
         <a v-if="project.homepage" :href="project.homepage" target="_blank">{{ project.homepage }}</a>
-        <p v-else class="noSite">Doesn't or can't have a live website</p>
+        <p v-else class="noSite">{{ $t("websiteMissing") }}</p>
         <p>{{ project.description }}</p>
-        <p>Most used language: {{ project.language }}</p>
+        <p>{{ $t("mostUsedLang") }}{{ project.language }}</p>
         <a :href="project.html_url" target="_blank"><FontAwesomeIcon :icon="faGithub" class="icons" /></a>
       </span>
     </div>

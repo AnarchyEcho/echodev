@@ -1,0 +1,13 @@
+{
+  "home": "Home",
+  "projects": "Projects",
+  "projectsHead": "My Projects",
+  "whoAmI": "Who am I",
+  "bioTop": "Hi! My name is Andrè, and I am {age} years old. I am a junior fullstack developer and I am now looking for a new job!",
+  "bioMiddleOne": "I have experience with frontend development and have recently focused on the backend. I am detail-oriented, so UX also comes naturally to me.",
+  "bioMiddleTwo": "Everything about programming engages me, and I am happy to familiarize myself with new languages and concepts. I work well both in teams and independently, largely because I like good structures and being goal oriented. I take responsibility and work well in responsible roles.",
+  "bioMiddleThree": "I have been a participant at Kodehode, where my spark for front-end development ignited, and since then it has only continued to grow.",
+  "bioEnd": "In my spare time I like to travel, and when I'm not doing that I spend a lot of time playing D&D where I usually take a leading role. I'm also an active MMO gamer and like to brush up on various simulation games.",
+  "websiteMissing": "Doesn't or can't have a live website",
+  "mostUsedLang": "Most used language: "
+}

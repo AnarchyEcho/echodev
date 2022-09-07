@@ -16,7 +16,8 @@ library.add(faGithub, faLinkedin);
         <FontAwesomeIcon :icon="faLinkedin" />
       </NuxtLink>
     </div>
-    <p>
+    <Locale />
+    <p style="width: 150px;">
       &copy; {{ `Copyright 2021 - ${new Date().getFullYear()}` }} <a href="https://github.com/kodeandre" target="_blank" rel="noreferrer">
         Andrè Hagen
       </a>

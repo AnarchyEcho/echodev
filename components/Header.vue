@@ -5,10 +5,10 @@
 <template>
   <div class="header">
     <NuxtLink to="/">
-      Home
+      {{ $t('home') }}
     </NuxtLink>
     <NuxtLink to="/projects">
-      Projects
+      {{ $t('projects') }}
     </NuxtLink>
   </div>
 </template>

@@ -27,10 +27,10 @@ function getAge(dateString: string) {
       <p>{{ $t("bioMiddleThree") }}</p>
       <p>{{ $t("bioEnd") }}</p>
     </div>
-    <div>
+    <!-- <div>
       <h2>{{ $t("skills") }}</h2>
       <Skills />
-    </div>
+    </div> -->
   </div>
 </template>
 

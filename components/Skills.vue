@@ -42,6 +42,7 @@ addIcons(ViFileTypeTypescriptOfficial,
 const langs = [
   ViFileTypeTypescriptOfficial,
   ViFileTypeJsOfficial,
+  SiGnubash,
   ViFileTypeCsharp2,
 ];
 const frameworks = [
@@ -54,7 +55,6 @@ const frameworks = [
 const techs = [
   FaNode,
   CoPostman,
-  SiGnubash,
   FcLinux,
   ViFileTypeGit,
   FaRaspberryPi,

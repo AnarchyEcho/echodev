@@ -19,18 +19,20 @@ function getAge(dateString: string) {
     </Head>
 
     <div class="info">
-      <h2>{{ $t("whoAmI") }}</h2>
-      <p>{{ $t("bioTop", { age: getAge('1998/02/22') }) }}</p>
-      <img :src="me" class="myImage">
-      <p>{{ $t("bioMiddleOne") }}</p>
-      <p>{{ $t("bioMiddleTwo") }}</p>
-      <p>{{ $t("bioMiddleThree") }}</p>
-      <p>{{ $t("bioEnd") }}</p>
+      <div class="wrapper">
+        <h2>{{ $t("whoAmI") }}</h2>
+        <p>{{ $t("bioTop", { age: getAge('1998/02/22') }) }}</p>
+        <img :src="me" class="myImage">
+        <p>{{ $t("bioMiddleOne") }}</p>
+        <p>{{ $t("bioMiddleTwo") }}</p>
+        <p>{{ $t("bioMiddleThree") }}</p>
+        <p>{{ $t("bioEnd") }}</p>
+      </div>
     </div>
-    <!-- <div>
+    <div style="text-align: center;">
       <h2>{{ $t("skills") }}</h2>
       <Skills />
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -39,10 +41,9 @@ function getAge(dateString: string) {
   margin-left: 10rem;
   margin-right: 10rem;
   text-align: center;
-    @media (max-width: 768px) {
-    text-align: left;
+  @media (max-width: 768px) {
     margin-left: 1rem;
-  margin-right: 1rem;
+    margin-right: 1rem;
   }
 }
 h2 {
@@ -51,9 +52,22 @@ h2 {
 a {
   color: #ffa500;
 }
+.info {
+  display: flex;
+  justify-content: center;
+}
 .myImage {
   width: 200px;
   height: 200px;
   border-radius: 100%;
+}
+.wrapper {
+  max-width: 65%;
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+.wrapper > p {
+  text-align: left;
 }
 </style>

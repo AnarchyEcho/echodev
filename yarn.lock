@@ -4688,6 +4688,13 @@ object.values@^1.1.5:
     define-properties "^1.1.3"
     es-abstract "^1.19.1"
 
+oh-vue-icons@^1.0.0-rc3:
+  version "1.0.0-rc3"
+  resolved "https://registry.yarnpkg.com/oh-vue-icons/-/oh-vue-icons-1.0.0-rc3.tgz#63be64dd0da11a1b278d612a4f2a25ba692628f6"
+  integrity sha512-+k2YC6piK7sEZnwbkQF3UokFPMmgqpiLP6f/H0ovQFLl20QA5V4U8EcI6EclD2Lt5NMQ3k6ilLGo8XyXqdVSvg==
+  dependencies:
+    vue-demi "^0.12.5"
+
 ohash@^0.1.0, ohash@^0.1.4:
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/ohash/-/ohash-0.1.5.tgz#7ba53b68c41fc72612ed75942b8f6da3b5d5bbda"
@@ -6461,6 +6468,11 @@ vue-bundle-renderer@^0.3.7:
   integrity sha512-jhkyS2Zaey9OAp2xVyGnN0//lLfNtT2elFq1NevaY4JwQEw27DFS970rQbNYPds2WXeq2H/O2HM+qCPcsimJGg==
   dependencies:
     bundle-runner "^0.0.1"
+
+vue-demi@^0.12.5:
+  version "0.12.5"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.12.5.tgz#8eeed566a7d86eb090209a11723f887d28aeb2d1"
+  integrity sha512-BREuTgTYlUr0zw0EZn3hnhC3I6gPWv+Kwh4MCih6QcAeaTlaIX0DwOVN0wHej7hSvDPecz4jygy/idsgKfW58Q==
 
 vue-eslint-parser@^8.0.1:
   version "8.3.0"

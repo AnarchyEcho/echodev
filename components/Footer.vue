@@ -3,7 +3,9 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-library.add(faGithub, faLinkedin);
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+const Envelope: any = faEnvelope;
+library.add(faGithub, faLinkedin, Envelope);
 </script>
 
 <template>
@@ -14,6 +16,9 @@ library.add(faGithub, faLinkedin);
       </NuxtLink>
       <NuxtLink href="https://www.linkedin.com/in/andr%C3%A8-hagen-a0a821217/" target="_blank" rel="noreferrer">
         <FontAwesomeIcon :icon="faLinkedin" />
+      </NuxtLink>
+      <NuxtLink href="mailto:anarchytrex@hotmail.com">
+        <FontAwesomeIcon :icon="Envelope" />
       </NuxtLink>
     </div>
     <Locale />

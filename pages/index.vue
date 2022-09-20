@@ -1,4 +1,10 @@
 <script setup lang="ts">
+// eslint-disable-next-line import/named
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+const External: any = faUpRightFromSquare;
+library.add(External);
 const me = ref('/me.png');
 function getAge(dateString: string) {
   const today = new Date();
@@ -27,9 +33,12 @@ function getAge(dateString: string) {
         <p>{{ $t("bioMiddleTwo") }}</p>
         <p>{{ $t("bioMiddleThree") }}</p>
         <p>{{ $t("bioEnd") }}</p>
+        <NuxtLink href="/AndreCV.pdf" target="_blank" class="pdf">
+          {{ $t("openCV") }} <FontAwesomeIcon :icon="External" />
+        </NuxtLink>
       </div>
     </div>
-    <div style="text-align: center;">
+    <div>
       <h2>{{ $t("skills") }}</h2>
       <Skills />
     </div>
@@ -51,6 +60,9 @@ h2 {
 }
 a {
   color: #ffa500;
+}
+.pdf {
+  font-size: 1.3rem;
 }
 .info {
   display: flex;

@@ -6,16 +6,14 @@ import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 const External: any = faUpRightFromSquare;
 library.add(External);
 const me = ref('/me.png');
-function getAge(dateString: string) {
-  const today = new Date();
-  const birthDate = new Date(dateString);
-  let age = today.getFullYear() - birthDate.getFullYear();
-  const m = today.getMonth() - birthDate.getMonth();
-  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-    age--;
-  }
+function getAge(year: number, month: number, day: number) {
+  const dayAsMs = 24 * 60 * 60 * 1000;
+  const bday: any = new Date(year, month, day);
+  const today: any = new Date();
+  const age = Math.floor(((today - bday) / dayAsMs) / 365);
   return age;
 }
+
 </script>
 
 <template>
@@ -27,7 +25,7 @@ function getAge(dateString: string) {
     <div class="info">
       <div class="wrapper">
         <h2>{{ $t("whoAmI") }}</h2>
-        <p>{{ $t("bioTop", { age: getAge('1998/02/22') }) }}</p>
+        <p>{{ $t("bioTop", { age: getAge(1998, 1, 22) }) }}</p>
         <img :src="me" class="myImage">
         <p>{{ $t("bioMiddleOne") }}</p>
         <p>{{ $t("bioMiddleTwo") }}</p>

@@ -17,10 +17,6 @@ export default defineNuxtConfig({
     strict: true,
   },
   build: {
-    loaders: {
-      sass: {},
-      scss: {},
-    },
     transpile: [
       '@fortawesome/vue-fontawesome',
       '@fortawesome/fontawesome-svg-core',

@@ -14,7 +14,7 @@ const { pending, data: projects }: any = await useFetch('https://dotrest.azurewe
     </Head>
 
     <ToTop />
-    <div v-if="pending">
+    <div v-if="pending" class="pending">
       {{ $t("loadingProjects") }}
     </div>
     <div v-else class="projectsList">
@@ -37,7 +37,7 @@ const { pending, data: projects }: any = await useFetch('https://dotrest.azurewe
   gap: 1rem;
   margin-left: 1rem;
   @media (min-width: 768px) {
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   }
   @media (max-width: 768px) {
     grid-template-columns: repeat(1fr);
@@ -63,5 +63,38 @@ a {
 .icons {
   font-size: 2rem;
   color: #ffa500;
+}
+.pending {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.pending:after {
+  content: '.';
+  font-size: 1.8rem;
+  animation: dots 1s steps(5, end) infinite;
+}
+@keyframes dots {
+  0%, 20% {
+    color: rgba(0,0,0,0);
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  40% {
+    color: white;
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  60% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 rgba(0,0,0,0);}
+  80%, 100% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 white;
+    }
 }
 </style>

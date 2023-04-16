@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 library.add(faGithub);
-const { pending, data: projects }: any = await useFetch('https://dotrest.azurewebsites.net/api/Projects');
+const { pending, data: projects }: any = await useFetch('https://dotrest.azurewebsites.net/api/Projects', { lazy: true });
 </script>
 
 <template>

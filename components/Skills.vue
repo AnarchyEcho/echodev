@@ -12,7 +12,6 @@ import {
   SiGnubash,
   ViFileTypeGit,
   ViFileTypeCsharp2,
-  ViFileTypeRest,
   FaUnity,
   FcLinux,
   FaRaspberryPi,
@@ -20,7 +19,6 @@ import {
   FaNode,
   CoPostman,
   ViFileTypeAzure,
-  ViFileTypeRust,
 } from 'oh-vue-icons/icons';
 addIcons(ViFileTypeTypescriptOfficial,
   ViFileTypeJsOfficial,
@@ -33,7 +31,6 @@ addIcons(ViFileTypeTypescriptOfficial,
   SiGnubash,
   ViFileTypeGit,
   ViFileTypeCsharp2,
-  ViFileTypeRest,
   FaUnity,
   FcLinux,
   FaRaspberryPi,
@@ -41,14 +38,12 @@ addIcons(ViFileTypeTypescriptOfficial,
   FaNode,
   CoPostman,
   ViFileTypeAzure,
-  ViFileTypeRust,
 );
 const langs = [
   ViFileTypeTypescriptOfficial,
   ViFileTypeJsOfficial,
   ViFileTypeCsharp2,
   SiGnubash,
-  ViFileTypeRust,
 ];
 const frameworks = [
   ViFileTypeNext,

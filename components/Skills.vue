@@ -46,27 +46,26 @@ addIcons(ViFileTypeTypescriptOfficial,
 const langs = [
   ViFileTypeTypescriptOfficial,
   ViFileTypeJsOfficial,
-  SiGnubash,
   ViFileTypeCsharp2,
+  SiGnubash,
   ViFileTypeRust,
 ];
 const frameworks = [
   ViFileTypeNext,
+  ViFileTypeReactjs,
   ViFileTypeNuxt,
+  ViFileTypeVue,
   ViFileTypeAngular,
   ViFileTypeGatsby,
-  ViFileTypeReactjs,
-  ViFileTypeVue,
 ];
 const techs = [
   FaNode,
+  ViFileTypeGit,
+  ViFileTypeDocker2,
   CoPostman,
   FcLinux,
-  ViFileTypeGit,
   FaRaspberryPi,
-  ViFileTypeRest,
   FaUnity,
-  ViFileTypeDocker2,
   ViFileTypeAzure,
 ];
 </script>

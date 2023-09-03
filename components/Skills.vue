@@ -1,67 +1,71 @@
 <script setup>
 import { OhVueIcon, addIcons } from 'oh-vue-icons';
 import {
-  ViFileTypeTypescriptOfficial,
-  ViFileTypeJsOfficial,
-  ViFileTypeNext,
-  ViFileTypeNuxt,
-  ViFileTypeAngular,
-  ViFileTypeGatsby,
-  ViFileTypeReactjs,
-  ViFileTypeVue,
-  SiGnubash,
-  ViFileTypeGit,
-  ViFileTypeCsharp2,
-  FaUnity,
-  FcLinux,
-  FaRaspberryPi,
-  ViFileTypeDocker2,
-  FaNode,
-  CoPostman,
-  ViFileTypeAzure,
+  ViFileTypeTypescriptOfficial as typescript,
+  ViFileTypeJsOfficial as javascript,
+  ViFileTypeNext as nextjs,
+  ViFileTypeNuxt as nuxtjs,
+  ViFileTypeAngular as angularjs,
+  ViFileTypeGatsby as gatsby,
+  ViFileTypeReactjs as reactjs,
+  ViFileTypeVue as vue,
+  SiGnubash as bash,
+  ViFileTypeGit as git,
+  ViFileTypeCsharp2 as csharp,
+  FaUnity as unity,
+  FcLinux as linux,
+  FaRaspberryPi as raspi,
+  ViFileTypeDocker2 as docker,
+  FaNode as node,
+  CoPostman as postman,
+  ViFileTypeAzure as azure,
+  CoPostgresql as postgres,
 } from 'oh-vue-icons/icons';
-addIcons(ViFileTypeTypescriptOfficial,
-  ViFileTypeJsOfficial,
-  ViFileTypeNext,
-  ViFileTypeNuxt,
-  ViFileTypeAngular,
-  ViFileTypeGatsby,
-  ViFileTypeReactjs,
-  ViFileTypeVue,
-  SiGnubash,
-  ViFileTypeGit,
-  ViFileTypeCsharp2,
-  FaUnity,
-  FcLinux,
-  FaRaspberryPi,
-  ViFileTypeDocker2,
-  FaNode,
-  CoPostman,
-  ViFileTypeAzure,
+addIcons(
+  typescript,
+  javascript,
+  nextjs,
+  nuxtjs,
+  angularjs,
+  gatsby,
+  reactjs,
+  vue,
+  bash,
+  git,
+  csharp,
+  unity,
+  linux,
+  raspi,
+  docker,
+  node,
+  postman,
+  azure,
+  postgres,
 );
 const langs = [
-  ViFileTypeTypescriptOfficial,
-  ViFileTypeJsOfficial,
-  ViFileTypeCsharp2,
-  SiGnubash,
+  typescript,
+  javascript,
+  csharp,
+  bash,
 ];
 const frameworks = [
-  ViFileTypeNext,
-  ViFileTypeReactjs,
-  ViFileTypeNuxt,
-  ViFileTypeVue,
-  ViFileTypeAngular,
-  ViFileTypeGatsby,
+  nextjs,
+  reactjs,
+  nuxtjs,
+  vue,
+  angularjs,
+  gatsby,
 ];
 const techs = [
-  FaNode,
-  ViFileTypeGit,
-  ViFileTypeDocker2,
-  CoPostman,
-  FcLinux,
-  FaRaspberryPi,
-  FaUnity,
-  ViFileTypeAzure,
+  node,
+  git,
+  postgres,
+  docker,
+  postman,
+  linux,
+  raspi,
+  unity,
+  azure,
 ];
 </script>
 
@@ -76,7 +80,6 @@ const techs = [
           <OhVueIcon
             :name="icon.name"
             scale="2.5"
-            :tooltip="icon.name"
             :hover="true"
             animation="float"
           />
@@ -90,7 +93,6 @@ const techs = [
           <OhVueIcon
             :name="icon.name"
             scale="2.5"
-            :tooltip="icon.name"
             :hover="true"
             animation="float"
           />
@@ -104,7 +106,6 @@ const techs = [
           <OhVueIcon
             :name="icon.name"
             scale="2.5"
-            :tooltip="icon.name"
             :hover="true"
             animation="float"
           />

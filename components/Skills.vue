@@ -20,6 +20,7 @@ import {
   CoPostman as postman,
   ViFileTypeAzure as azure,
   CoPostgresql as postgres,
+  ViFileTypeSqlite as sqlite,
 } from 'oh-vue-icons/icons';
 addIcons(
   typescript,
@@ -41,6 +42,7 @@ addIcons(
   postman,
   azure,
   postgres,
+  sqlite,
 );
 const langs = [
   typescript,
@@ -60,6 +62,7 @@ const techs = [
   node,
   git,
   postgres,
+  sqlite,
   docker,
   postman,
   linux,

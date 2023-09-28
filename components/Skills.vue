@@ -21,6 +21,7 @@ import {
   ViFileTypeAzure as azure,
   CoPostgresql as postgres,
   ViFileTypeSqlite as sqlite,
+  CoRedis as redis,
 } from 'oh-vue-icons/icons';
 addIcons(
   typescript,
@@ -43,6 +44,7 @@ addIcons(
   azure,
   postgres,
   sqlite,
+  redis,
 );
 const langs = [
   typescript,
@@ -58,11 +60,14 @@ const frameworks = [
   angularjs,
   gatsby,
 ];
+const databases = [
+  postgres,
+  sqlite,
+  redis,
+];
 const techs = [
   node,
   git,
-  postgres,
-  sqlite,
   docker,
   postman,
   linux,
@@ -85,6 +90,7 @@ const techs = [
             scale="2.5"
             :hover="true"
             animation="float"
+            :class="icon.name"
           />
         </span>
       </div>
@@ -98,6 +104,21 @@ const techs = [
             scale="2.5"
             :hover="true"
             animation="float"
+            :class="icon.name"
+          />
+        </span>
+      </div>
+      <div class="iconDiv">
+        <p class="label">
+          {{ $t("databases") }}
+        </p>
+        <span v-for="icon in databases" :key="icon.name">
+          <OhVueIcon
+            :name="icon.name"
+            scale="2.5"
+            :hover="true"
+            animation="float"
+            :class="icon.name"
           />
         </span>
       </div>
@@ -111,6 +132,7 @@ const techs = [
             scale="2.5"
             :hover="true"
             animation="float"
+            :class="icon.name"
           />
         </span>
       </div>
@@ -130,5 +152,23 @@ const techs = [
 }
 .label {
   min-width: 100px;
+}
+
+// Icon specific css
+.co-postgresql {
+  fill: #336791;
+  stroke: #f5f5f5;
+}
+.co-redis {
+  color: #d82c20;
+}
+.fa-node {
+  color: #68a063;
+}
+.co-postman {
+  color: #ef5b25;
+}
+.fa-raspberry-pi {
+  color: #c51a4a;
 }
 </style>

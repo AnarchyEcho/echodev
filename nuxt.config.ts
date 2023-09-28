@@ -26,6 +26,7 @@ export default defineNuxtConfig({
       '@fortawesome/free-brands-svg-icons',
       '@fortawesome/free-solid-svg-icons',
       '@fortawesome/free-regular-svg-icons',
+      'oh-vue-icons',
     ],
   },
   vite: {

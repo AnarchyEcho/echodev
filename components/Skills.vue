@@ -19,6 +19,7 @@ import {
   FaNode as node,
   CoPostman as postman,
   ViFileTypeAzure as azure,
+  ViFileTypeSql as sql,
   CoPostgresql as postgres,
   ViFileTypeSqlite as sqlite,
   CoRedis as redis,
@@ -42,6 +43,7 @@ addIcons(
   node,
   postman,
   azure,
+  sql,
   postgres,
   sqlite,
   redis,
@@ -63,6 +65,7 @@ const frameworks = [
 const databases = [
   postgres,
   sqlite,
+  sql,
   redis,
 ];
 const techs = [

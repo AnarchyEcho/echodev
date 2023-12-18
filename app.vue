@@ -1,11 +1,12 @@
 <script setup lang="ts">
+import { SpeedInsights } from '@vercel/speed-insights/nuxt';
 const logo = ref('/logo.svg');
 </script>
 
 <template>
   <div class="app">
     <Head>
-      <Meta name="description" content="CV page created with Nuxt3/Vue" />
+      <Meta name="description" content="Echo's homepage and tools" />
       <Meta name="keywords" content="Typescript, Vue, CV, resume, portfolio" />
       <Meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <Link rel="icon" type="image/svg" :href="logo" />
@@ -14,6 +15,7 @@ const logo = ref('/logo.svg');
     <Header class="Header" />
     <NuxtPage class="Body" />
     <Footer class="Footer" />
+    <SpeedInsights />
   </div>
 </template>
 

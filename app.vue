@@ -33,6 +33,7 @@ a {
   text-decoration: none;
 }
 .app {
+  min-height: 100vh;
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr;

@@ -10,6 +10,9 @@
     <NuxtLink to="/projects">
       {{ $t('projects') }}
     </NuxtLink>
+    <NuxtLink to="https://anna.echodev.sh">
+      Anna
+    </NuxtLink>
   </div>
 </template>
 

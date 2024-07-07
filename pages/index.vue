@@ -1,34 +1,27 @@
 <script setup lang="ts">
 const me = ref('/me.png');
-function getAge(year: number, month: number, day: number) {
-  const dayAsMs = 24 * 60 * 60 * 1000;
-  const bday: any = new Date(year, month, day);
-  const today: any = new Date();
-  const age = Math.floor(((today - bday) / dayAsMs) / 365);
-  return age;
+function getAge() {
+    const today = new Date();
+    const birthDate = new Date('1998/02/22');
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
 }
 </script>
 
 <template>
   <div class="body">
     <Head>
-      <Title>{{ $t('home') }}</Title>
+      <Title>EchoDev</Title>
     </Head>
 
     <div class="info">
       <div class="wrapper">
-        <h2>{{ $t("whoAmI") }}</h2>
-        <p>{{ $t("bioTop", { age: getAge(1998, 1, 22) }) }}</p>
-        <img :src="me" class="myImage">
-        <p>{{ $t("bioMiddleOne") }}</p>
-        <p>{{ $t("bioMiddleTwo") }}</p>
-        <p>{{ $t("bioMiddleThree") }}</p>
-        <p>{{ $t("bioEnd") }}</p>
+        Age: {{ getAge() }}
       </div>
-    </div>
-    <div>
-      <h2>{{ $t("skills") }}</h2>
-      <Skills />
     </div>
   </div>
 </template>

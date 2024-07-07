@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { SpeedInsights } from '@vercel/speed-insights/nuxt';
-const logo = ref('/logo.svg');
+const logo = ref('/favicon.ico');
 </script>
 
 <template>
@@ -12,9 +12,9 @@ const logo = ref('/logo.svg');
       <Link rel="icon" type="image/svg" :href="logo" />
     </Head>
 
-    <Header class="Header" />
+    <!-- <Header class="Header" /> -->
     <NuxtPage class="Body" />
-    <Footer class="Footer" />
+    <!-- <Footer class="Footer" /> -->
     <SpeedInsights />
   </div>
 </template>

@@ -7,14 +7,14 @@ const logo = ref('/favicon.ico');
   <div class="app">
     <Head>
       <Meta name="description" content="Echo's homepage and tools" />
-      <Meta name="keywords" content="Typescript, Vue, CV, resume, portfolio" />
+      <Meta name="keywords" content="Typescript, Vue, Nuxt, Homepage, CV, Resume, Portfolio" />
       <Meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <Link rel="icon" type="image/svg" :href="logo" />
+      <Link rel="icon" type="image/ico" :href="logo" />
     </Head>
 
-    <!-- <Header class="Header" /> -->
+    <Header class="Header" />
     <NuxtPage class="Body" />
-    <!-- <Footer class="Footer" /> -->
+    <Footer class="Footer" />
     <SpeedInsights />
   </div>
 </template>

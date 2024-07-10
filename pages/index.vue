@@ -20,7 +20,8 @@ function getAge() {
 
     <div class="info">
       <div class="wrapper">
-        Age: {{ getAge() }}
+        <div>Age: {{ getAge() }}</div>
+        <NuxtImg class="myImage" :src="me" />
       </div>
     </div>
   </div>

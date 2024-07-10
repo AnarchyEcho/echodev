@@ -5,11 +5,11 @@
 <template>
   <div class="header">
     <NuxtLink to="/">
-      {{ $t('home') }}
+      Home
     </NuxtLink>
-    <NuxtLink to="/projects">
-      {{ $t('projects') }}
-    </NuxtLink>
+    <!-- <NuxtLink to="/projects">
+      Projects
+    </NuxtLink> -->
     <NuxtLink to="https://anna.echodev.sh">
       Anna
     </NuxtLink>

@@ -18,7 +18,7 @@ const me = ref('/me.png');
           Lately I've been working on getting my experience up with backend projects, as I feel that I've got the frontend experience needed to make just about anything.
         </div>
         <div>
-          The biggest project being a discord bot, Anna, I have linked in the header, using technologies such as <Fancy>Docker</Fancy> for production, <Fancy>Typescript</Fancy> as the language, and <Fancy>SQLite</Fancy> for the database. I've been proudly working on Anna for the greater half of a year.
+          The biggest project being a discord bot, Anna, I have linked in the header, using technologies such as <Fancy>Docker</Fancy> for production deployment, <Fancy>Typescript</Fancy> as the language, <Fancy>SQLite</Fancy> for the database, and finally <Fancy>Nuxt</Fancy> for the dashboard. I've been proudly working on Anna for the greater half of a year.
         </div>
         <br />
         <div>
@@ -48,11 +48,13 @@ a {
 .info {
   display: flex;
   justify-content: center;
+  padding-top: 1.5rem;
 }
 .myImage {
   width: 200px;
   height: 200px;
   border-radius: 100%;
+  margin: 1rem 0;
 }
 .wrapper {
   max-width: 65%;

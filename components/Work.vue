@@ -8,8 +8,8 @@ const experience: Array<[name: string, time: string, position: string]> = [
 <template>
   <div>
     <h2>Work experience</h2>
-    <p style="color: gray; margin: 0;">Only those relevant to programming</p>
-    <p style="color: gray; margin: 0;">From most to least recent</p>
+    <p style="color: gray; margin: 0; text-align: center;">Only those relevant to programming</p>
+    <p style="color: gray; margin: 0; text-align: center;">From most to least recent</p>
 
     <div v-for="job in experience">
       <p><Fancy>{{ job[0] }}</Fancy> - {{ job[1] }}</p>
@@ -35,5 +35,8 @@ h2 {
   @media (max-width: 768px) {
     max-width: 70%;
   }
+}
+p {
+  text-align: left;
 }
 </style>

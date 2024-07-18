@@ -63,7 +63,4 @@ a {
     max-width: 100%;
   }
 }
-.wrapper > p {
-  text-align: left;
-}
 </style>

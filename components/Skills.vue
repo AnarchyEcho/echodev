@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const skills: Array<[string, number, boolean?]> = [
+const skills: Array<[name: string, experience: number, professional?: boolean]> = [
   ['Git', 8, true],
   ['Typescript/Javascript', 8, true],
   ['C#', 6],
@@ -18,7 +18,7 @@ const skills: Array<[string, number, boolean?]> = [
   <div>
     <h2>List of technical skills</h2>
 
-    <p style="color: gray;">Name: experience</p>
+    <p style="color: gray; margin: 0;">Name: experience</p>
     <div v-for="skill in skills">
       <p><Fancy>{{ skill[0] }}</Fancy>: {{ skill[1] }}/10</p>
       <p v-if="skill[2]" class="professional">Used professionally? Yes.</p>

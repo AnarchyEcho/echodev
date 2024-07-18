@@ -16,7 +16,7 @@ const me = ref('/me.png');
     </div>
     <br />
     <div>
-      <Fancy>Programming takes up a lot of my personal interest and time</Fancy>, alongside reading, playing video games, and socialising with my friends. I pride myself on being a patient and persistent type of person, working on a task until completion, much to the dismay of my attention to things like eating and taking breaks.
+      <Fancy>Programming takes up a lot of my personal interest and time</Fancy>, alongside reading, playing video games, and socialising with my friends. I would describe myself as being a patient and persistent type of person, working on a task until completion, much to the dismay of my attention to things like eating and taking breaks.
     </div>
   </div>
 </template>

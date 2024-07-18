@@ -1,3 +1,7 @@
-# The homepage of EchoDev, a hub of projects, tools, and information.
+# EchoDev
 
-Features localisation in languages: English and Norwegian Bokmål.
+Echo's homepage.
+
+## Tools and Features
+
+* Anna, discord bot.

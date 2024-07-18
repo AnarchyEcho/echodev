@@ -1,7 +1,7 @@
-# CV in nuxt3
+# EchoDev
 
-Features localisation in languages: English and Norwegian Bokmål.
+Echo's homepage.
 
 ## Tools and Features
 
-* TBA
+* Anna, discord bot.

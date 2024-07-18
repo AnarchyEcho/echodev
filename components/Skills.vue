@@ -17,8 +17,8 @@ const skills: Array<[name: string, experience: number, professional?: boolean]> 
 <template>
   <div>
     <h2>List of technical skills</h2>
-
     <p style="color: gray; margin: 0;">Name: experience</p>
+
     <div v-for="skill in skills">
       <p><Fancy>{{ skill[0] }}</Fancy>: {{ skill[1] }}/10</p>
       <p v-if="skill[2]" class="professional">Used professionally? Yes.</p>
@@ -32,9 +32,6 @@ h2 {
   margin: 0;
   padding: 0;
   text-decoration: underline;
-}
-a {
-  color: #ffa500;
 }
 .professional {
   margin: 0;

@@ -31,7 +31,8 @@ html, body {
   margin: 0;
 }
 a {
-  text-decoration: none;
+  color: #ffa500;
+  text-decoration: underline;
 }
 .app {
   min-height: 100vh;

@@ -22,10 +22,6 @@ const me = ref('/me.png');
 </template>
 
 <style scoped lang="scss">
-a {
-  color: #ffa500;
-  text-decoration: underline;
-}
 .myImage {
   width: 200px;
   height: 200px;

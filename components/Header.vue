@@ -26,6 +26,7 @@ a {
   font-size: 2rem;
   padding: 0.5rem;
   color: #f5f5f5;
+  text-decoration: none;
 }
 .header {
   display: flex;

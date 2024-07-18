@@ -36,12 +36,12 @@ const gitUrl = 'https://github.com/AnarchyEcho';
   gap: 0.5rem;
   font-size: 2rem;
 }
+.links > a {
+  margin-top: 5px;
+}
 .copyright {
   width: 150px;
   padding: 10px 0;
   margin: 0;
-}
-a {
-  color: #ffa500;
 }
 </style>

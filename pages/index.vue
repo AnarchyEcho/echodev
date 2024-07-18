@@ -12,8 +12,13 @@
         <div class="bioWrapper">
           <Bio />
         </div>
-        <div class="skillsWrapper">
-          <Skills />
+        <div class="boringWrapper">
+          <div class="skillsWrapper">
+            <Skills />
+          </div>
+          <div class="workWrapper">
+            <Work />
+          </div>
         </div>
       </div>
     </div>
@@ -40,6 +45,14 @@ a {
   display: flex;
   justify-content: center;
   padding-top: 1.5rem;
+}
+.boringWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 .wrapper {
   max-width: 65%;

@@ -5,11 +5,11 @@
 <template>
   <div class="header">
     <NuxtLink to="/">
-      {{ $t('home') }}
+      Home
     </NuxtLink>
-    <NuxtLink to="/projects">
-      {{ $t('projects') }}
-    </NuxtLink>
+    <!-- <NuxtLink to="/projects">
+      Projects
+    </NuxtLink> -->
     <NuxtLink to="https://anna.echodev.sh">
       Anna
     </NuxtLink>
@@ -26,9 +26,7 @@ a {
   font-size: 2rem;
   padding: 0.5rem;
   color: #f5f5f5;
-  @media (max-width: 768px) {
-    font-size: 1.5rem;
-  }
+  text-decoration: none;
 }
 .header {
   display: flex;

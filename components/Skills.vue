@@ -1,177 +1,41 @@
-<script setup>
-import { OhVueIcon, addIcons } from 'oh-vue-icons';
-import {
-  ViFileTypeTypescriptOfficial as typescript,
-  ViFileTypeJsOfficial as javascript,
-  ViFileTypeNext as nextjs,
-  ViFileTypeNuxt as nuxtjs,
-  ViFileTypeAngular as angularjs,
-  ViFileTypeGatsby as gatsby,
-  ViFileTypeReactjs as reactjs,
-  ViFileTypeVue as vue,
-  SiGnubash as bash,
-  ViFileTypeGit as git,
-  ViFileTypeCsharp2 as csharp,
-  FaUnity as unity,
-  FcLinux as linux,
-  FaRaspberryPi as raspi,
-  ViFileTypeDocker2 as docker,
-  FaNode as node,
-  CoPostman as postman,
-  ViFileTypeAzure as azure,
-  ViFileTypeSql as sql,
-  CoPostgresql as postgres,
-  ViFileTypeSqlite as sqlite,
-  CoRedis as redis,
-} from 'oh-vue-icons/icons';
-addIcons(
-  typescript,
-  javascript,
-  nextjs,
-  nuxtjs,
-  angularjs,
-  gatsby,
-  reactjs,
-  vue,
-  bash,
-  git,
-  csharp,
-  unity,
-  linux,
-  raspi,
-  docker,
-  node,
-  postman,
-  azure,
-  sql,
-  postgres,
-  sqlite,
-  redis,
-);
-const langs = [
-  typescript,
-  javascript,
-  csharp,
-  bash,
-];
-const frameworks = [
-  nextjs,
-  reactjs,
-  nuxtjs,
-  vue,
-  angularjs,
-  gatsby,
-];
-const databases = [
-  postgres,
-  sqlite,
-  sql,
-  redis,
-];
-const techs = [
-  node,
-  git,
-  docker,
-  postman,
-  linux,
-  raspi,
-  unity,
-  azure,
-];
+<script setup lang="ts">
+const skills: Array<[name: string, experience: number, professional?: boolean]> = [
+  ['Git', 8, true],
+  ['Typescript/Javascript', 8, true],
+  ['C#', 6],
+  ['Shell/Bash', 7, true],
+  ['SQL/SQLite', 7],
+  ['Bun/Node', 8, true],
+  ['Docker', 5, true],
+  ['Vue/Nuxt', 7],
+  ['React/Next/Gatsby', 6, true],
+  ['CSS/SCSS', 7, true],
+  ['Linux/Windows', 9, true],
+]
 </script>
 
 <template>
-  <div class="parent">
-    <div class="wrapper">
-      <div class="iconDiv">
-        <p class="label">
-          {{ $t("langs") }}
-        </p>
-        <span v-for="icon in langs" :key="icon.name">
-          <OhVueIcon
-            :name="icon.name"
-            scale="2.5"
-            :hover="true"
-            animation="float"
-            :class="icon.name"
-          />
-        </span>
-      </div>
-      <div class="iconDiv">
-        <p class="label">
-          {{ $t("frameworks") }}
-        </p>
-        <span v-for="icon in frameworks" :key="icon.name">
-          <OhVueIcon
-            :name="icon.name"
-            scale="2.5"
-            :hover="true"
-            animation="float"
-            :class="icon.name"
-          />
-        </span>
-      </div>
-      <div class="iconDiv">
-        <p class="label">
-          {{ $t("databases") }}
-        </p>
-        <span v-for="icon in databases" :key="icon.name">
-          <OhVueIcon
-            :name="icon.name"
-            scale="2.5"
-            :hover="true"
-            animation="float"
-            :class="icon.name"
-          />
-        </span>
-      </div>
-      <div class="iconDiv">
-        <p class="label">
-          {{ $t("technologies") }}
-        </p>
-        <span v-for="icon in techs" :key="icon.name">
-          <OhVueIcon
-            :name="icon.name"
-            scale="2.5"
-            :hover="true"
-            animation="float"
-            :class="icon.name"
-          />
-        </span>
-      </div>
+  <div>
+    <h2>List of technical skills</h2>
+    <p style="color: gray; margin: 0;">Name: experience</p>
+
+    <div v-for="skill in skills">
+      <p><Fancy>{{ skill[0] }}</Fancy>: {{ skill[1] }}/10</p>
+      <p v-if="skill[2]" class="professional">Used professionally? Yes.</p>
     </div>
   </div>
 </template>
 
-<style lang="scss">
-.parent {
-  display: flex;
-  justify-content: center;
+<style scoped lang="scss">
+h2 {
+  color: #ffa500;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
 }
-.iconDiv {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: left;
-}
-.label {
-  min-width: 100px;
-}
-
-// Icon specific css
-.co-postgresql {
-  fill: #336791;
-  stroke: #f5f5f5;
-}
-.co-redis {
-  color: #d82c20;
-}
-.fa-node {
-  color: #68a063;
-}
-.co-postman {
-  color: #ef5b25;
-}
-.fa-raspberry-pi {
-  color: #c51a4a;
+.professional {
+  margin: 0;
+  margin-top: -15px;
+  padding: 0;
 }
 </style>

@@ -1,17 +1,18 @@
 <script setup lang="ts">
 import { SpeedInsights } from '@vercel/speed-insights/nuxt';
-const logo = ref('/logo.svg');
+const logo = ref('/favicon.ico');
 </script>
 
 <template>
   <div class="app">
     <Head>
       <Meta name="description" content="Echo's homepage and tools" />
-      <Meta name="keywords" content="Typescript, Vue, CV, resume, portfolio" />
+      <Meta name="keywords" content="Typescript, Vue, Nuxt, Homepage, CV, Resume, Portfolio" />
       <Meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <Link rel="icon" type="image/svg" :href="logo" />
+      <Link rel="icon" type="image/ico" :href="logo" />
     </Head>
 
+    <NuxtLoadingIndicator />
     <Header class="Header" />
     <NuxtPage class="Body" />
     <Footer class="Footer" />
@@ -30,7 +31,8 @@ html, body {
   margin: 0;
 }
 a {
-  text-decoration: none;
+  color: #ffa500;
+  text-decoration: underline;
 }
 .app {
   min-height: 100vh;

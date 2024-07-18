@@ -1,34 +1,26 @@
 <script setup lang="ts">
-const me = ref('/me.png');
-function getAge(year: number, month: number, day: number) {
-  const dayAsMs = 24 * 60 * 60 * 1000;
-  const bday: any = new Date(year, month, day);
-  const today: any = new Date();
-  const age = Math.floor(((today - bday) / dayAsMs) / 365);
-  return age;
-}
 </script>
 
 <template>
   <div class="body">
     <Head>
-      <Title>{{ $t('home') }}</Title>
+      <Title>EchoDev</Title>
     </Head>
 
     <div class="info">
       <div class="wrapper">
-        <h2>{{ $t("whoAmI") }}</h2>
-        <p>{{ $t("bioTop", { age: getAge(1998, 1, 22) }) }}</p>
-        <img :src="me" class="myImage">
-        <p>{{ $t("bioMiddleOne") }}</p>
-        <p>{{ $t("bioMiddleTwo") }}</p>
-        <p>{{ $t("bioMiddleThree") }}</p>
-        <p>{{ $t("bioEnd") }}</p>
+        <div class="bioWrapper">
+          <Bio />
+        </div>
+        <div class="boringWrapper">
+          <div class="skillsWrapper">
+            <Skills />
+          </div>
+          <div class="workWrapper">
+            <Work />
+          </div>
+        </div>
       </div>
-    </div>
-    <div>
-      <h2>{{ $t("skills") }}</h2>
-      <Skills />
     </div>
   </div>
 </template>
@@ -52,14 +44,21 @@ a {
 .info {
   display: flex;
   justify-content: center;
+  padding-top: 1.5rem;
 }
-.myImage {
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
+.boringWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 .wrapper {
   max-width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   @media (max-width: 768px) {
     max-width: 100%;
   }

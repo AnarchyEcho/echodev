@@ -1,11 +1,4 @@
 <script setup lang="ts">
-// eslint-disable-next-line import/named
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-const Envelope: any = faEnvelope;
-library.add(faGithub, faLinkedin, Envelope);
 const gitUrl = 'https://github.com/AnarchyEcho';
 </script>
 
@@ -13,18 +6,14 @@ const gitUrl = 'https://github.com/AnarchyEcho';
   <div class="footer">
     <div class="links">
       <NuxtLink :to="gitUrl" target="_blank" no-rel>
-        <FontAwesomeIcon :icon="faGithub" />
+        <Icon name="bi:github" mode="svg" />
       </NuxtLink>
       <NuxtLink href="https://www.linkedin.com/in/andr%C3%A8-hagen-a0a821217/" target="_blank" rel="noreferrer">
-        <FontAwesomeIcon :icon="faLinkedin" />
-      </NuxtLink>
-      <NuxtLink href="mailto:anarchytrex@hotmail.com">
-        <FontAwesomeIcon :icon="Envelope" />
+        <Icon name="bi:linkedin" mode="svg" />
       </NuxtLink>
     </div>
-    <Locale />
-    <p style="width: 150px;">
-      &copy; {{ `Copyright 2021 - ${new Date().getFullYear()}` }} <NuxtLink :href="gitUrl" target="_blank" rel="noreferrer">
+    <p class="copyright">
+      &copy; Copyright 2021 - {{ new Date().getFullYear() }} <NuxtLink :href="gitUrl" target="_blank" rel="noreferrer">
         Andrè Hagen
       </NuxtLink>
     </p>
@@ -47,7 +36,12 @@ const gitUrl = 'https://github.com/AnarchyEcho';
   gap: 0.5rem;
   font-size: 2rem;
 }
-a {
-  color: #ffa500;
+.links > a {
+  margin-top: 5px;
+}
+.copyright {
+  width: 150px;
+  padding: 10px 0;
+  margin: 0;
 }
 </style>

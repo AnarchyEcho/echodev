@@ -7,6 +7,6 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
   },
-  modules: ['@nuxt/image'],
+  modules: ['@nuxt/image', "@nuxt/icon"],
   plugins: [{ src: '~/plugins/vercel.ts', mode: 'client' }],
 })

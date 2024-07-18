@@ -12,6 +12,7 @@ const logo = ref('/favicon.ico');
       <Link rel="icon" type="image/ico" :href="logo" />
     </Head>
 
+    <NuxtLoadingIndicator />
     <Header class="Header" />
     <NuxtPage class="Body" />
     <Footer class="Footer" />

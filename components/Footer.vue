@@ -6,14 +6,11 @@ const gitUrl = 'https://github.com/AnarchyEcho';
   <div class="footer">
     <div class="links">
       <NuxtLink :to="gitUrl" target="_blank" no-rel>
-        Github
+        <Icon name="bi:github" mode="svg" />
       </NuxtLink>
       <NuxtLink href="https://www.linkedin.com/in/andr%C3%A8-hagen-a0a821217/" target="_blank" rel="noreferrer">
-        LinkedIn
+        <Icon name="bi:linkedin" mode="svg" />
       </NuxtLink>
-      <!-- <NuxtLink href="mailto:anarchytrex@hotmail.com">
-        Email
-      </NuxtLink> -->
     </div>
     <p class="copyright">
       &copy; Copyright 2021 - {{ new Date().getFullYear() }} <NuxtLink :href="gitUrl" target="_blank" rel="noreferrer">

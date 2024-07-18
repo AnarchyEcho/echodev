@@ -19,6 +19,9 @@
           <div class="workWrapper">
             <Work />
           </div>
+          <div class="langWrapper">
+            <Languages />
+          </div>
         </div>
       </div>
     </div>

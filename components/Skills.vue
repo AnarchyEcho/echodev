@@ -1,27 +1,26 @@
 <script setup lang="ts">
-const skills: Array<[name: string, experience: number, professional?: boolean]> = [
-  ['Git', 8, true],
-  ['Typescript/Javascript', 8, true],
+const skills: Array<[name: string, experience: number]> = [
+  ['Git', 8],
+  ['Typescript/Javascript', 8],
   ['C#', 6],
-  ['Shell/Bash', 7, true],
+  ['Shell/Bash', 7],
   ['SQL/SQLite', 7],
-  ['Bun/Node', 8, true],
-  ['Docker', 5, true],
+  ['Bun/Node', 8],
+  ['Docker', 5],
   ['Vue/Nuxt', 7],
-  ['React/Next/Gatsby', 6, true],
-  ['CSS/SCSS', 7, true],
-  ['Linux/Windows', 9, true],
+  ['React/Next/Gatsby', 6],
+  ['CSS/SCSS', 7],
+  ['Linux/Windows', 9],
 ]
 </script>
 
 <template>
   <div>
     <h2>List of technical skills</h2>
-    <p style="color: gray; margin: 0; text-align: center;">Name: experience</p>
+    <p style="color: gray; margin: 0 0 10px; text-align: center;">Name: experience</p>
 
     <div v-for="skill in skills">
       <p><Fancy>{{ skill[0] }}</Fancy>: {{ skill[1] }}/10</p>
-      <p v-if="skill[2]" class="professional">Used professionally? Yes.</p>
     </div>
   </div>
 </template>
@@ -40,5 +39,8 @@ h2 {
 }
 p {
   text-align: left;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
 }
 </style>

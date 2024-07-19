@@ -7,6 +7,8 @@ const skills: Array<[name: string, experience: number]> = [
   ['SQL/SQLite', 7],
   ['Bun/Node', 8],
   ['Docker', 5],
+  ['Jenkins', 5],
+  ['Jira/Teams/Slack', 7],
   ['Vue/Nuxt', 7],
   ['React/Next/Gatsby', 6],
   ['CSS/SCSS', 7],

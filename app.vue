@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { SpeedInsights } from '@vercel/speed-insights/nuxt';
-const logo = ref('/favicon.ico');
+const logo = ref('/logo.ico');
 </script>
 
 <template>

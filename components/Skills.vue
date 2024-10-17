@@ -3,6 +3,7 @@ const skills: Array<[name: string, experience: number]> = [
   ['Git', 8],
   ['Typescript/Javascript', 8],
   ['C#', 6],
+  ['Python', 6]
   ['Scala', 4],
   ['Zig', 4],
   ['Shell/Bash', 7],

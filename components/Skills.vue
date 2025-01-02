@@ -1,22 +1,28 @@
 <script setup lang="ts">
 const skills: Array<[name: string, experience: number]> = [
-  ['Git', 8],
   ['Typescript/Javascript', 8],
+  ['CSS/SCSS', 7],
   ['C#', 6],
-  ['Python', 6]
+  ['Python', 6],
+  ['C', 5],
   ['Scala', 4],
   ['Zig', 4],
   ['Shell/Bash', 7],
   ['SQL/SQLite', 7],
+  ['Git', 8],
   ['Bun/Node', 8],
   ['Docker', 5],
   ['Jenkins', 5],
-  ['Jira/Teams/Slack', 7],
   ['Vue/Nuxt', 7],
   ['React/Next/Gatsby', 6],
-  ['CSS/SCSS', 7],
+  ['Angular/AngularJS', 4],
   ['Linux/Windows', 9],
+  ['Jira/Teams/Slack', 7],
 ]
+enum ESkills {
+  name,
+  experience
+}
 </script>
 
 <template>
@@ -25,7 +31,7 @@ const skills: Array<[name: string, experience: number]> = [
     <p style="color: gray; margin: 0 0 10px; text-align: center;">Name: experience</p>
 
     <div v-for="skill in skills">
-      <p><Fancy>{{ skill[0] }}</Fancy>: {{ skill[1] }}/10</p>
+      <p><Fancy>{{ skill[ESkills.name] }}</Fancy>: {{ skill[ESkills.experience] }}/10</p>
     </div>
   </div>
 </template>

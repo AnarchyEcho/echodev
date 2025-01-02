@@ -7,9 +7,6 @@
     <NuxtLink to="/">
       Home
     </NuxtLink>
-    <!-- <NuxtLink to="/projects">
-      Projects
-    </NuxtLink> -->
     <NuxtLink to="https://anna.echodev.sh">
       Anna
     </NuxtLink>

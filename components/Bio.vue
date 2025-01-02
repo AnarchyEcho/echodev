@@ -9,7 +9,7 @@ const me = ref('/me.png');
     </p>
     <NuxtImg class="myImage" :src="me" />
     <p>
-      Lately I've been working on getting my experience up with backend projects, as I feel that I've got the frontend experience needed to make just about anything.
+      Lately I've been working on upgrading my expertise in backend with <NuxtLink to="https://www.boot.dev/" target="_blank">Boot.Dev&#10548;</NuxtLink> and <NuxtLink to="https://www.noroff.no/studier/fagskole/backend-utvikling-2-aarig" target="_blank">Noroff&#10548;</NuxtLink>, as I feel that I've got the frontend expertise needed to make just about anything.
     </p>
     <p>
       The biggest project being a discord bot, <NuxtLink to="https://anna.echodev.sh">Anna&#10548;</NuxtLink>, I have linked in the header, using technologies such as <Fancy>Docker</Fancy> for production deployment, <Fancy>Typescript</Fancy> as the language, <Fancy>SQLite</Fancy> for the database, and finally <Fancy>Nuxt</Fancy> for the dashboard. I've been proudly working on <NuxtLink to="https://anna.echodev.sh">Anna&#10548;</NuxtLink> for about a year.

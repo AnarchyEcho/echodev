@@ -7,7 +7,7 @@ const me = ref('/me.png');
     <p>
       I'm <Fancy>Andrè</Fancy>, <Fancy><Age /></Fancy>. A passionate fullstack software engineer from Norway, prepared to drive success in a fresh environment.
     </p>
-    <NuxtImg class="myImage" :src="me" />
+    <NuxtImg class="myImage" alt="Circle shaped portrait of Andre, aka EchoDev." :src="me" />
     <p>
       Lately I've been working on upgrading my expertise in backend with <NuxtLink to="https://www.boot.dev/" target="_blank">Boot.Dev&#10548;</NuxtLink> and <NuxtLink to="https://www.noroff.no/studier/fagskole/backend-utvikling-2-aarig" target="_blank">Noroff&#10548;</NuxtLink>, as I feel that I've got the frontend expertise needed to make just about anything.
     </p>

@@ -3,13 +3,17 @@ const languages: Array<[name: string, level: string]> = [
   ['Norwegian', 'Native'],
   ['English', 'Fluent'],
 ]
+enum Language {
+  name,
+  level
+}
 </script>
 
 <template>
   <div style="max-width: 350px;">
     <h2 style="margin-bottom: 10px;">Languages</h2>
     <div v-for="lang in languages">
-      <p><Fancy>{{ lang[0] }}</Fancy> - {{ lang[1] }}</p>
+      <p><Fancy>{{ lang[Language.name] }}</Fancy> - {{ lang[Language.level] }}</p>
     </div>
   </div>
 </template>

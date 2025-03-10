@@ -4,22 +4,20 @@ const skills: Array<[name: string, experience: number]> = [
   ['CSS/SCSS', 7],
   ['C#', 6],
   ['Python', 6],
-  ['C', 5],
-  ['Scala', 4],
-  ['Zig', 4],
+  ['C/Zig', 5],
   ['Shell/Bash', 7],
   ['SQL/SQLite', 7],
   ['Git', 8],
   ['Bun/Node', 8],
   ['Docker', 5],
-  ['Jenkins', 5],
+  ['Jenkins', 3],
   ['Vue/Nuxt', 7],
   ['React/Next/Gatsby', 6],
   ['Angular/AngularJS', 4],
-  ['Linux/Windows', 9],
+  ['Linux/Windows', 10],
   ['Jira/Teams/Slack', 7],
 ]
-enum ESkills {
+enum Skill {
   name,
   experience
 }
@@ -31,7 +29,7 @@ enum ESkills {
     <p style="color: gray; margin: 0 0 10px; text-align: center;">Name: experience</p>
 
     <div v-for="skill in skills">
-      <p><Fancy>{{ skill[ESkills.name] }}</Fancy>: {{ skill[ESkills.experience] }}/10</p>
+      <p><Fancy>{{ skill[Skill.name] }}</Fancy>: {{ skill[Skill.experience] }}/10</p>
     </div>
   </div>
 </template>

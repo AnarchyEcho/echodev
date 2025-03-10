@@ -9,10 +9,10 @@ const me = ref('/me.png');
     </p>
     <NuxtImg class="myImage" alt="Circle shaped portrait of Andre, aka EchoDev." :src="me" />
     <p>
-      Lately I've been working on upgrading my expertise in backend with <NuxtLink to="https://www.boot.dev/" target="_blank">Boot.Dev&#10548;</NuxtLink> and <NuxtLink to="https://www.noroff.no/studier/fagskole/backend-utvikling-2-aarig" target="_blank">Noroff&#10548;</NuxtLink>, as I feel that I've got the frontend expertise needed to make just about anything.
+      Currently I'm attending <NuxtLink to="https://www.noroff.no/studier/fagskole/backend-utvikling-2-aarig" target="_blank">Noroff for Backend Development&#10548;</NuxtLink> via their online schooling.
     </p>
     <p>
-      The biggest project being a discord bot, <NuxtLink to="https://anna.echodev.sh">Anna&#10548;</NuxtLink>, I have linked in the header, using technologies such as <Fancy>Docker</Fancy> for production deployment, <Fancy>Typescript</Fancy> as the language, <Fancy>SQLite</Fancy> for the database, and finally <Fancy>Nuxt</Fancy> for the dashboard. I've been proudly working on <NuxtLink to="https://anna.echodev.sh">Anna&#10548;</NuxtLink> for about a year.
+      As for personal projects, the project I've learned the most from, and currently my largest scale personal project, is a discord bot by the name of <NuxtLink to="https://anna.echodev.sh">Anna&#10548;</NuxtLink>, I have it linked in the header, and it uses technologies such as <Fancy>Docker</Fancy> for production deployment, with <Fancy>SQLite</Fancy> as the database solution, and finally <Fancy>Nuxt</Fancy> for the dashboard, all programmed in <Fancy>Typescript</Fancy>.
     </p>
     <br />
     <p>

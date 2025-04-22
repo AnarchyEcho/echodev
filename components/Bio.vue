@@ -12,7 +12,7 @@ const me = ref('/me.png');
       Currently I'm attending <NuxtLink to="https://www.noroff.no/studier/fagskole/backend-utvikling-2-aarig" target="_blank">Noroff for Backend Development&#10548;</NuxtLink> via their online schooling.
     </p>
     <p>
-      As for personal projects, the project I've learned the most from, and currently my largest scale personal project, is a discord bot by the name of <NuxtLink to="https://anna.echodev.sh">Anna&#10548;</NuxtLink>, I have it linked in the header, and it uses technologies such as <Fancy>Docker</Fancy> for production deployment, with <Fancy>SQLite</Fancy> as the database solution, and finally <Fancy>Nuxt</Fancy> for the dashboard, all programmed in <Fancy>Typescript</Fancy>.
+      As of right now, my largest scale personal project is a discord bot by the name of <NuxtLink to="https://anna.echodev.sh">Anna&#10548;</NuxtLink>, I have it linked in the navbar, and it uses technologies such as <Fancy>Docker</Fancy> for production deployment, with <Fancy>SQLite</Fancy> as the database solution, and finally <Fancy>Nuxt</Fancy> for the dashboard, all programmed in <Fancy>Typescript</Fancy>.
     </p>
     <br />
     <p>

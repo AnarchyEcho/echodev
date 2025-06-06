@@ -51,6 +51,8 @@ export default withNuxt(
         'selfClosingTag': 'always',
       }],
       'no-return-assign': 0,
+      'vue/first-attribute-linebreak': 0,
+      'vue/html-self-closing': 0,
     },
   },
 );

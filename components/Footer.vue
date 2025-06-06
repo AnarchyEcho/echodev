@@ -29,6 +29,7 @@ const gitUrl = 'https://github.com/AnarchyEcho';
   justify-content: space-between;
   align-items: center;
 }
+
 .links {
   display: flex;
   justify-content: center;
@@ -36,9 +37,11 @@ const gitUrl = 'https://github.com/AnarchyEcho';
   gap: 0.5rem;
   font-size: 2rem;
 }
-.links > a {
+
+.links>a {
   margin-top: 5px;
 }
+
 .copyright {
   width: 150px;
   padding: 10px 0;

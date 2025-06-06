@@ -1,17 +1,9 @@
 <script setup lang="ts">
 import { SpeedInsights } from '@vercel/speed-insights/nuxt';
-const logo = ref('/logo.ico');
 </script>
 
 <template>
   <div class="app">
-    <Head>
-      <Meta name="description" content="Echo's homepage and tools" />
-      <Meta name="keywords" content="Typescript, Vue, Nuxt, Homepage, CV, Resume, Portfolio" />
-      <Meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <Link rel="icon" type="image/ico" :href="logo" />
-    </Head>
-
     <NuxtLoadingIndicator />
     <Header class="Header" />
     <NuxtPage class="Body" />
@@ -26,14 +18,18 @@ const logo = ref('/logo.ico');
   color: #f5f5f5;
   font-family: arial;
 }
-html, body {
+
+html,
+body {
   min-height: 100%;
   margin: 0;
 }
+
 a {
   color: #ffa500;
   text-decoration: underline;
 }
+
 .app {
   min-height: 100vh;
   display: grid;
@@ -46,16 +42,20 @@ a {
     "Body"
     "Footer";
 }
+
 ::-webkit-scrollbar {
-width: 6px;
+  width: 6px;
 }
+
 ::-webkit-scrollbar-track {
-background-color: #12121200;
+  background-color: #12121200;
 }
+
 ::-webkit-scrollbar-thumb {
-background-color: #fe9000;
+  background-color: #fe9000;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-background: #fe9000;
+  background: #fe9000;
 }
 </style>

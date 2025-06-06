@@ -3,15 +3,15 @@ const experience: Array<[name: string, time: string, position: string, tasks: st
   [
     'WA.Works',
     '7 months',
-    'Frontend Engineer', 'Main frontend developer working on developing and elevating the face of the product, a recruitment website for tech companies to find developers fitting their workload and environment, and the UI library used throughout the entirety of the frontend of the product.'
+    'Frontend Engineer', 'Main frontend developer working on developing and elevating the face of the product, a recruitment website for tech companies to find developers fitting their workload and environment, and the UI library used throughout the entirety of the frontend of the product.',
   ],
   [
     'DNB',
     '6 months',
     'Software Engineer',
-    'Main frontend developer in a small team of variously roled engineers, in charge of a product used for management by companies. (NDA)'
+    'Main frontend developer in a small team of variously roled engineers, in charge of a product used for management by companies. (NDA)',
   ],
-]
+];
 enum Experience {
   name,
   time,

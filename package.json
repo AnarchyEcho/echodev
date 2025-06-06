@@ -8,24 +8,20 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "lint": "eslint --ext .ts, .js, .vue ."
+    "lint": "eslint ."
   },
   "dependencies": {
-    "@nuxt/icon": "^1.1.1",
-    "@nuxt/image": "^1.7.0",
+    "@nuxt/icon": "1.13.0",
+    "@nuxt/image": "1.10.0",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
-    "nuxt": "^3.12.3",
-    "vue": "latest"
+    "nuxt": "^3.17.5",
+    "vue": "^3.5.16",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.228",
-    "@nuxt/types": "^2.18.1",
-    "@typescript-eslint/eslint-plugin": "^7.15.0",
-    "@typescript-eslint/parser": "^7.15.0",
-    "eslint": "^9.6.0",
-    "eslint-plugin-vue": "^9.27.0",
-    "sass": "^1.77.6",
-    "vite-plugin-eslint": "^1.8.1"
+    "eslint": "^9.0.0",
+    "@nuxt/eslint": "1.4.1",
+    "sass": "^1.89.1"
   }
 }

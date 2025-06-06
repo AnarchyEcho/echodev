@@ -2,7 +2,7 @@
 const languages: Array<[name: string, level: string]> = [
   ['Norwegian', 'Native'],
   ['English', 'Fluent'],
-]
+];
 enum Language {
   name,
   level

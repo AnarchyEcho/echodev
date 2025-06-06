@@ -7,7 +7,7 @@ export default defineNuxtPlugin(() => {
       if (params.get('noTrack')) {
         return null;
       }
-      return event
-    }
+      return event;
+    },
   });
 });

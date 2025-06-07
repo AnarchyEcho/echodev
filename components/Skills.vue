@@ -26,7 +26,7 @@ enum Skill {
     <h2>List of technical skills</h2>
     <p style="color: gray; margin: 0 0 10px; text-align: center;">Name: experience</p>
 
-    <div v-for="skill in skills">
+    <div v-for="skill in skills" :key="skill[Skill.name]">
       <p>
         <Fancy>{{ skill[Skill.name] }}</Fancy>: {{ skill[Skill.experience] }}/10
       </p>

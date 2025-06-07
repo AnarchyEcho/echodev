@@ -12,8 +12,10 @@ enum Language {
 <template>
   <div style="max-width: 350px;">
     <h2 style="margin-bottom: 10px;">Languages</h2>
-    <div v-for="lang in languages">
-      <p><Fancy>{{ lang[Language.name] }}</Fancy> - {{ lang[Language.level] }}</p>
+    <div v-for="lang in languages" :key="lang[Language.name]">
+      <p>
+        <Fancy>{{ lang[Language.name] }}</Fancy> - {{ lang[Language.level] }}
+      </p>
     </div>
   </div>
 </template>
@@ -25,6 +27,7 @@ h2 {
   padding: 0;
   text-decoration: underline;
 }
+
 p {
   text-align: left;
   margin: 0;

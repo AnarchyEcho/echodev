@@ -50,9 +50,10 @@ export default withNuxt(
         'endTag': 'never',
         'selfClosingTag': 'always',
       }],
-      'no-return-assign': 0,
-      'vue/first-attribute-linebreak': 0,
-      'vue/html-self-closing': 0,
+      'no-return-assign': 'off',
+      'vue/first-attribute-linebreak': 'off',
+      'vue/html-self-closing': 'off',
+      'vue/singleline-html-element-content-newline': ['off'],
     },
   },
 );

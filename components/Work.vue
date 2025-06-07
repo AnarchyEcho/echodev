@@ -26,10 +26,16 @@ enum Experience {
     <p style="color: gray; margin: 0; text-align: center;">Only those relevant to programming</p>
     <p style="color: gray; margin: 0 0 10px; text-align: center;">From most to least recent</p>
 
-    <div v-for="job in experience">
-      <p><Fancy>{{ job[Experience.name] }}</Fancy> - {{ job[Experience.time] }}</p>
-      <p><Fancy>Position</Fancy>: {{ job[Experience.position] }}</p>
-      <p><Fancy>Responsibilities</Fancy>: {{ job[Experience.tasks] }}</p>
+    <div v-for="job in experience" :key="job[Experience.name]">
+      <p>
+        <Fancy>{{ job[Experience.name] }}</Fancy> - {{ job[Experience.time] }}
+      </p>
+      <p>
+        <Fancy>Position</Fancy>: {{ job[Experience.position] }}
+      </p>
+      <p>
+        <Fancy>Responsibilities</Fancy>: {{ job[Experience.tasks] }}
+      </p>
       <hr class="line" />
     </div>
   </div>
@@ -42,11 +48,13 @@ h2 {
   padding: 0;
   text-decoration: underline;
 }
+
 .line {
   @media (max-width: 768px) {
     max-width: 70%;
   }
 }
+
 p {
   text-align: left;
   margin: 0 0 5px;

@@ -4,12 +4,12 @@
 
 <template>
   <div class="header">
-    <NuxtLink to="/">
-      Home
-    </NuxtLink>
-    <NuxtLink to="https://anna.echodev.sh">
-      Anna
-    </NuxtLink>
+    <!-- <NuxtLink to="/"> -->
+    <!--   Home -->
+    <!-- </NuxtLink> -->
+    <!-- <NuxtLink to="https://anna.echodev.sh"> -->
+    <!--   Anna -->
+    <!-- </NuxtLink> -->
   </div>
 </template>
 
@@ -19,12 +19,14 @@
   background-color: #303030;
   border-radius: 10px;
 }
+
 a {
   font-size: 2rem;
   padding: 0.5rem;
   color: #f5f5f5;
   text-decoration: none;
 }
+
 .header {
   display: flex;
   justify-content: center;

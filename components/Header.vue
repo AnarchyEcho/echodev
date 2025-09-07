@@ -4,12 +4,12 @@
 
 <template>
   <div class="header">
-    <NuxtLink to="/">
-      Home
-    </NuxtLink>
-    <NuxtLink to="https://anna.echodev.sh">
-      Anna
-    </NuxtLink>
+    <!-- <NuxtLink to="/"> -->
+    <!--   Home -->
+    <!-- </NuxtLink> -->
+    <!-- <NuxtLink to="https://anna.echodev.sh"> -->
+    <!--   Anna -->
+    <!-- </NuxtLink> -->
   </div>
 </template>
 
